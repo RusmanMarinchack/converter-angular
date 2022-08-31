@@ -1,0 +1,22 @@
+<section class="conventer">
+    <div class="conventer__container _container">
+        <div class="conventer__wrapper conventer-wrapper">
+            <div class="conventer-wrapper__item">
+                <input type="number" id="input-one" (input)="currencyOne()" [placeholder]="selectOne.value" #inputOne>
+                <select name="" id="select-one" (input)="currencyTwo()" #selectOne>
+                    <option value="UAH" defauld>UAH</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+            <div class="conventer-wrapper__item">
+                <input type="number" id="input-two" (input)="currencyTwo()" [placeholder]="selectTwo.value" #inputTwo>
+                <select name="select" id="select-two" (input)="currencyOne()" #selectTwo>
+                    <option value="USD" defauld>USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="UAH">UAH</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>

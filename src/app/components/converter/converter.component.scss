@@ -1,0 +1,38 @@
+.conventer {
+
+    // .conventer__container
+
+    &__container {
+    }
+
+    // .conventer__wrapper
+
+    .conventer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        margin: 20px 0;
+
+        // .conventer-wrapper__item
+    
+        &__item {
+            max-width: 400px;
+            width: 100%;
+            & input{
+                width: 75%;
+                padding: 5px;
+                border: none;
+                border-bottom: 1px solid silver;
+                outline: none;
+            }
+            & select {
+                width: 25%;
+                padding: 5px;
+                border: none;
+                border-bottom: 1px solid silver;
+                border-left: 1px solid silver;
+            }
+        }
+    }
+}

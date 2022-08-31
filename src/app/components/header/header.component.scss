@@ -1,0 +1,40 @@
+.header {
+    min-height: 70px;
+    box-shadow: 0 0 11px 0px black;
+
+    // .header__container
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 15px;
+        column-gap: 50px;
+        font-size: 20px;
+        @media screen and (max-width: 1430px) {
+            column-gap: calc(20px + 30 * (100vw - 320px) / 1440);
+        }
+    }
+
+    // .header__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    // .header__label
+
+    &__label {
+    }
+
+    // .header__value
+
+    &__value {
+        font-weight: 900;
+    }
+}
+
