@@ -9,8 +9,7 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  @Input() dollar: any
-  @Input() euro: any
+  @Input() curenc: any
 
   ngOnInit(): void {
   }
